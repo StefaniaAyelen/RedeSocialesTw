@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    background-color: yellowgreen;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+
+}
+
+#title{
+    font-size: xx-large;
+    animation: float 3s ease-in-out infinite;
+    color: #AB7743;
+}
+
+@keyframes float {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(43, 42, 42, 0.705);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0.295);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: 90%;
+    transition: 0.3s;
+}
+
+a:hover{
+    transform: scale(1.2);
+}
+
+#ig:hover{
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+#tik:hover{
+    background: linear-gradient(45deg, #25f4ee, #fe2c55);
+}
+
+#tw:hover{
+    background: linear-gradient(135deg, #9146FF, #772CE8);
+}
+
+#sp:hover{
+    background: linear-gradient(135deg, #1DB954, #1ed760, #191414);
+
+}
+
+
+
+i{
+    margin-right: 10px;
+}
