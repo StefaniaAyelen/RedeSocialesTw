@@ -3,11 +3,11 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    background-color: pink;
 }
 
-main{
-    height: 100vh;
+#main{
+    min-height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,13 +25,15 @@ main{
     width: 20%;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px); 
+    position: relative;
+    z-index: 2;
 
 }
 
 #title{
     font-size: xx-large;
     animation: float 3s ease-in-out infinite;
-    color: gray;
+    color: #d6f4ff;
 }
 
 @keyframes float {
@@ -90,8 +92,29 @@ a:hover{
 
 }
 
-
-
 i{
     margin-right: 10px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.5;
+}
+
+img{
+    width: 40%;
 }
