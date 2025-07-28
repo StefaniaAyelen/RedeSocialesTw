@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    background-color: yellowgreen;
+    background-color: pink;
 }
 
 main{
@@ -31,7 +31,7 @@ main{
 #title{
     font-size: xx-large;
     animation: float 3s ease-in-out infinite;
-    color: #AB7743;
+    color: gray;
 }
 
 @keyframes float {
